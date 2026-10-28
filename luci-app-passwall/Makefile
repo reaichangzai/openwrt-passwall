@@ -75,7 +75,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_Geoview
 config PACKAGE_$(PKG_NAME)_INCLUDE_SmartDNS
 	bool "Include SmartDNS"
 	select PACKAGE_smartdns
-	default y if aarch64||arm||i386||x86_64
+	default n
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_Haproxy
 	bool "Include Haproxy"
@@ -130,7 +130,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_Simple_Obfs
 config PACKAGE_$(PKG_NAME)_INCLUDE_SingBox
 	bool "Include Sing-Box"
 	select PACKAGE_sing-box
-	default y if aarch64||arm||i386||x86_64
+	default n
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_V2ray_Geodata
 	bool "Include V2ray_Geodata"
